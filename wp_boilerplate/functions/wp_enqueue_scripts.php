@@ -47,6 +47,7 @@ function dl_enqueue_scripts() {
 		wp_enqueue_script( 'flickity' );
 	}
 
+	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'main_js' );
 
 }

@@ -51,5 +51,35 @@
 				</a>
 			</div>
 		</div>
+</div>
+
+	<div class= "front__blog">
+		<div class= "blog__title">
+			<hr>
+			<h2> ¡Últimas noticias!</h2>
+			<hr>
+		</div>
+		
+			<?php
+				$arg = array(
+					'post_type'		 => 'blog',
+					'posts_per_page' => 3,
+				);
+
+				$get_arg = new WP_Query( $arg );
+
+				while ( $get_arg->have_posts() ) {
+					$get_arg->the_post();
+				?>
+				<div class="blog__entries col-offset-2 col-md-4">
+					<?php the_post_thumbnail('frontblog') ?>
+					<a href="<?php the_permalink() ?>"><?php the_title()  ?></a>
+					<div class= "entries__excerpt"><?php the_excerpt()  ?></div>
+				</div>
+	 
+				<?php } wp_reset_postdata();
+			?>
+		</ul>
+	</div>
 
 <?php get_footer() ?>

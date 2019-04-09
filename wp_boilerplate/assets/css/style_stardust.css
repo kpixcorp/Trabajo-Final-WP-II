@@ -89,7 +89,6 @@ body {
 
 
 .video__youtube {
-	height: 600px;
 	padding: 10px 40px;
 	text-align: center;
 }
@@ -248,17 +247,12 @@ body {
 
 
 
-	.content {
-	margin: 0 0 50px;
-	height: 1800px;
-	}
-
 	.content__leftside {
-	height: 600px;
 	background-color: black;
 	box-sizing: border-box;
 	padding: 20px;
 	text-align: center;
+	display: none;
 	}
 
 	.content__rightside {
@@ -266,11 +260,10 @@ body {
 		background-color: blue;
 		box-sizing: border-box;
 		padding: 0;
+		width: 100%;
 	}
 
 	.rightside__featured {
-		width: 100%;
-		height: 50%;
 		float: left;
 		box-sizing: border-box;
 		position: relative;
@@ -305,3 +298,32 @@ body {
 	}
 
 
+/* --FIN PAGES STYLE-- */
+/* --FRONT PAGE WP-- */
+
+	.front__blog{
+		color: white;
+		padding: 0 20px;
+	}
+
+	.front__blog a{
+		text-decoration: none;
+		color: white;
+		font-size: 1.2em;
+		margin-left: 10px;
+	}
+
+	.blog__entries{
+		text-decoration: none;
+		background-color: white;
+		font-size: 0.8em;
+		border-radius: 10px;
+		color: black;
+		padding: 10px;
+		margin: 10px 5px;
+	}
+
+	.blog__title {
+		text-align: center;
+
+	}
