@@ -38,7 +38,7 @@ body {
 }
 
 .header__brand img {
-	margin: 15px;
+	margin: 25px;
 	width: 130px;
 }
 
@@ -55,16 +55,17 @@ body {
 .brand__menu li {
 	display: inline-block;
 	padding: 5px;
-	margin: 3px;
+	margin: 0 3px;
 }
 .brand__menu a {
 	font-size: 1.2em;
 	opacity: 0.7;
 	color: black;
+	text-decoration: none;
+	padding: 10px;
 }
 
 .brand__menu a:hover {
-	display: inline-block;
 	color: white;
 	background-color: black;
 	opacity: 0.7;
@@ -287,14 +288,25 @@ body {
 /* -- FIN JS -- */
 /* --PAGES STYLE-- */
 
+	.page {
+		padding: 10px;
+
+	}
+
 	.page_style {
-	background-color: yellow;
-	margin: 10px;
+	background-color: white;
 	text-align: center;
+	padding: 10px;
 	}
 
 	.page_content {
 		text-align: center;
+	}
+
+	.page__date {
+		text-align: left;
+		font-size: 0.8em;
+		opacity: 0.7;
 	}
 
 
@@ -306,11 +318,20 @@ body {
 		padding: 0 20px;
 	}
 
-	.front__blog span{
-		text-decoration: none;
-		color: black;
-		font-size: 1.3em;
+	.blog__link {
+		opacity: 0.9;
 	}
+
+	.blog__link:hover{
+		opacity: 1;
+		transition: 0.7s;
+	}
+
+	.front__mess a {
+		text-decoration: none;
+	}
+
+
 
 	.blog__link {
 		text-decoration: none;		
@@ -323,17 +344,40 @@ body {
 		font-size: 0.8em;
 		border-radius: 10px;
 		color: black;
-		padding: 10px;
+		padding: 40px;
 		margin: 10px 5px;
-		text-align: center;
+		height: 320px;
+		box-sizing: border-box;
+
 	}
 
-	.blog__title {
+	.marker {
 		text-align: center;
-
+		color: white;
 	}
 
 	.blog__entries img{
 		margin: 3px 0;
-
 	}
+	
+	.entries__text {
+		width: 45%;
+		float: right;
+		text-align: center;
+		border-style: dotted;
+		padding: 10px;
+	}
+
+	.entries__text span{
+		color: black;
+		font-size: 1.3em;
+		margin: 10px;
+		font-weight: bolder;
+	}
+
+	.entries__text p{
+		margin: 15px;
+	}
+
+/* --FIN FRONT PAGE WP-- */
+/* -- -- */

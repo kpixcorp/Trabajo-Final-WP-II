@@ -55,17 +55,17 @@
 
 
 	<div class= "row front__blog">
-		<div class= "blog__title">
+		<div class= "blog__title marker">
 			<hr>
 			<h2> ¡Últimas noticias!</h2>
 			<hr>
 		</div>
 
-		<div class="front__mess col-md-offset-2">
+		<div class="front__mess col-md-offset-1">
 			<?php
 				$arg = array(
 					'post_type'		 => 'blog',
-					'posts_per_page' => 3,
+					'posts_per_page' => 4,
 				);
 
 				$get_arg = new WP_Query( $arg );
@@ -75,10 +75,11 @@
 				?>
 				<a href="<?php the_permalink() ?>" class= "blog__link">
 					<div class="blog__entries col-md-5">
-					<div class= "entries__img"><?php the_post_thumbnail('frontblog') ?></div>
-					<br>
-					<span><?php the_title()  ?></span>
-					<?php the_excerpt()  ?>
+							<?php the_post_thumbnail('frontblog') ?>
+						<div class= "entries__text">
+							<span><?php the_title() ?></span>
+							<p><?php the_excerpt()  ?></p>
+						</div>
 					</div>
 				</a>
 	 
@@ -88,7 +89,15 @@
 	</div>
 
 <!-- Place somewhere in the <body> of your page -->
+
+		<div class= "blog__title marker">
+			<hr>
+			<h2> Galería </h2>
+			<hr>
+		</div>
+
 	<div class="row col-md-10 col-md-offset-1">
+
 		<div class="flexslider">
 		  <ul class="slides">
 		    <li data-thumb="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg">

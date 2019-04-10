@@ -6,6 +6,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<?php get_template_part('_includes/iOS', 'icons') ?>
+	<?php get_template_part('_includes/chucao', 'fonts') ?>
 	<?php wp_head() ?>
 </head>
 <body>
@@ -37,6 +38,5 @@
 				) ); ?>
 			<?php } ?>
 
-s
 		</div>
 	</header>

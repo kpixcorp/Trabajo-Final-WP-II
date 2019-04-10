@@ -27,7 +27,7 @@ function dl_enqueue_style() {
 	wp_register_style( 'style_stardust', get_theme_file_uri( '/assets/css/style_stardust.css'), null, 'null', 'screen' );
 
 	wp_register_style( 'fake_css', get_theme_file_uri( '/assets/css/fake_css.css'), null, 'null', 'screen' );
-
+	
 
 	/* Enqueue Styles */
 	if ( $theme_options['slider']['flexslider'] ) {
