@@ -7,7 +7,7 @@
 	<div class="row footer">
 		<div class="col-sm-12 footer__info">
 			<hr>
-			<p>© 2019 Tienda Chucao - All Right Reserved</p>
+			<p>© 2019 Tienda Chucao - All Rights Reserved</p>
 		</div>
 
 

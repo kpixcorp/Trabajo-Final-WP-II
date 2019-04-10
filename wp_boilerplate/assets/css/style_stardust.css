@@ -296,19 +296,31 @@ body {
 	.page_style {
 	background-color: white;
 	text-align: center;
-	padding: 10px;
+	padding: 20px;
 	}
+
 
 	.page_content {
 		text-align: center;
+	}
+
+	.page_content img{
+		width: 100%;
 	}
 
 	.page__date {
 		text-align: left;
 		font-size: 0.8em;
 		opacity: 0.7;
+		border: 1px dotted rgba(0, 0, 0, .5);
+		margin: 12px;
+		padding: 10px;
 	}
 
+	.sidebar {
+		float: right;
+		background-color: grey;
+	}
 
 /* --FIN PAGES STYLE-- */
 /* --FRONT PAGE WP-- */
@@ -362,6 +374,7 @@ body {
 	
 	.entries__text {
 		width: 45%;
+		height: 240px;
 		float: right;
 		text-align: center;
 		border-style: dotted;

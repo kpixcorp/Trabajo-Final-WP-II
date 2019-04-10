@@ -14,7 +14,7 @@
 	<header class="row header">
 		<div class="col-sm-12 header__brand">
 
-			<a href="<?php home_url() ?>"><img src="<?php bloginfo("template_url") ?>/assets/images/chucaowhit.png" alt="Logo de la tienda Chucao"></a>
+			<a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo("template_url") ?>/assets/images/chucaowhit.png" alt="Logo de la tienda Chucao"></a>
 
 			<!--<ul class="brand__menu">
 				<a href=""><li><i class="fas fa-home"></i>Home</li></a>
