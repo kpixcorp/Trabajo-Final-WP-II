@@ -44,7 +44,6 @@ function dl_enqueue_style() {
 
 	wp_enqueue_style( 'style_stardust' );
 
-
 	global $post;
 
 	if (is_page() && ($post -> post_parent)){

@@ -53,13 +53,15 @@
 		</div>
 </div>
 
-	<div class= "front__blog">
+
+	<div class= "row front__blog">
 		<div class= "blog__title">
 			<hr>
 			<h2> ¡Últimas noticias!</h2>
 			<hr>
 		</div>
-		
+
+		<div class="front__mess col-md-offset-2">
 			<?php
 				$arg = array(
 					'post_type'		 => 'blog',
@@ -71,15 +73,39 @@
 				while ( $get_arg->have_posts() ) {
 					$get_arg->the_post();
 				?>
-				<div class="blog__entries col-offset-2 col-md-4">
-					<?php the_post_thumbnail('frontblog') ?>
-					<a href="<?php the_permalink() ?>"><?php the_title()  ?></a>
-					<div class= "entries__excerpt"><?php the_excerpt()  ?></div>
-				</div>
+				<a href="<?php the_permalink() ?>" class= "blog__link">
+					<div class="blog__entries col-md-5">
+					<div class= "entries__img"><?php the_post_thumbnail('frontblog') ?></div>
+					<br>
+					<span><?php the_title()  ?></span>
+					<?php the_excerpt()  ?>
+					</div>
+				</a>
 	 
 				<?php } wp_reset_postdata();
 			?>
-		</ul>
+		</div>
 	</div>
+
+<!-- Place somewhere in the <body> of your page -->
+	<div class="row col-md-10 col-md-offset-1">
+		<div class="flexslider">
+		  <ul class="slides">
+		    <li data-thumb="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg">
+		      <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
+		    </li>
+		    <li data-thumb="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg">
+		      <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
+		    </li>
+		    <li data-thumb="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg">
+		      <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
+		    </li>
+		    <li data-thumb="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg">
+		      <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
+		    </li>
+		  </ul>
+		</div>
+	</div>
+
 
 <?php get_footer() ?>
