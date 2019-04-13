@@ -3,17 +3,18 @@
 <?php if ( have_posts() ) { ?>
 	<?php while ( have_posts() ) { ?>
 		
-	<div class="row page">
-		<div class= "page_style col-md-8">
+	<div class="row single">
+		<div class= "single_style col-md-9">
 			<?php the_post(); ?>
 			<h1><?php the_title() ?></h1>
-			<br>
-			<div class="page__content"><?php the_post_thumbnail('') ?></div>
-			<p class= "page__date"><time datetime="<?php the_time('Y-m-d') ?>"><?php the_time('d \d\e F \d\e Y') ?></time>
+			<p class= "single__date">
+				<time datetime="<?php the_time('Y-m-d') ?>"><?php the_time('d \d\e F \d\e Y') ?></time>
 			</p>
-			<p><?php the_content() ?></p>
+			<?php the_post_thumbnail('singlefeatured') ?>
+			<hr>
+			<div class= single__entry><?php the_content() ?></div>
 		</div>
-		<div class="sidebar col-md-4">
+		<div class="sidebar col-md-3">
 			<?php get_sidebar() ?>
 		</div>
 	</div>
@@ -24,4 +25,6 @@
 <?php } wp_reset_query(); ?>
 
 <?php get_footer() ?>
+
+
 
