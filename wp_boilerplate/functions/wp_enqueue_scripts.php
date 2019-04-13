@@ -38,6 +38,7 @@ function dl_enqueue_scripts() {
 	wp_register_script( 'flexslider', get_theme_file_uri('/assets/js/lib/jquery.flexslider.js'), array('jquery-migrate'), null, true );
 	wp_register_script( 'main_js', get_theme_file_uri('/assets/js/functions.js'), $deps, $theme_data->get( 'Version' ), true );
 
+
 	/* Enqueue Scripts */
 	if ( $theme_options['slider']['flexslider'] ) {
 		wp_enqueue_script( 'flexslider' );
@@ -46,6 +47,7 @@ function dl_enqueue_scripts() {
 	if ( $theme_options['slider']['flickity'] ) {
 		wp_enqueue_script( 'flickity' );
 	}
+
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'main_js' );

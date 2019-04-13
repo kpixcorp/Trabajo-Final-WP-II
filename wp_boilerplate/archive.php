@@ -11,6 +11,7 @@
 				<p class= "single__date">
 					<time datetime="<?php the_time('Y-m-d') ?>"><?php the_time('d \d\e F \d\e Y') ?></time>
 				</p>
+				<hr>
 				<?php the_excerpt() ?>
 			</a>
 		</li>

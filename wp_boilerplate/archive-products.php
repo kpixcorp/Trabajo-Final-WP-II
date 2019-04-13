@@ -1,18 +1,30 @@
 <?php get_header() ?>
 
 	<?php if (have_posts()) { ?>
-	<ul class= "archive col-md-9">
-
-		
+	<ul class= "products col-md-12">
+		<hr>
+		<h1>Productos Chucao</h1>
+		<hr>
 		<?php while ( have_posts() ) { the_post(); ?>
-		<li>
-			<a href="<?php the_permalink() ?>">
-				<?php the_post_thumbnail('frontblog') ?>
-				<hr>
-				<span><?php the_title() ?></span>
-				<?php the_excerpt() ?>
-			</a>
-		</li>
+			<?php $dispo = get_field('disponibilidad') ?>
+
+			<div class="col-md-3">
+				<li>
+					<a href="<?php the_permalink() ?>">
+					<h4><?php the_title() ?></h4>
+					<?php the_post_thumbnail() ?>
+					<p class= "products__precio">$<?php the_field('precio') ?></p>
+					<p class= "products__tipo"><?php the_field('tipo') ?></p>
+					<?php if ($dispo): 
+						echo "<p class= 'products__disponible'>Disponible</p> "
+						?>	
+					<?php else:
+						echo "<p class= 'products__nodisponible'>No disponible</p>"
+					 ?>
+					<?php endif ?>
+					</a>
+				</li>
+			</div>
 		<?php }; ?>
 	</ul>
 //
@@ -21,5 +33,4 @@
 		<p>No hay elementos</p>
 	<?php } wp_reset_query(); ?>
 
-	<div class="col-md-3 sidebar"><?php get_sidebar() ?></div>
 <?php get_footer() ?>
