@@ -87,12 +87,11 @@ max-width: 100vw;
 
 .video {
 	background-color: black;
-	margin: 30px 0;
 }
 
 
 .video__youtube {
-	padding: 10px 40px;
+	padding: 50px 0;
 	text-align: center;
 }
 
@@ -156,25 +155,25 @@ max-width: 100vw;
 }
 
 .feat1 {
-	background-image: url(../images/banner1e.png);
+	background-image: url(../images/banner1insta.png);
 	background-size: auto;
 	background-position: center;
 }
 
 .feat2 {
-	background-image: url(../images/banner2a.png);
+	background-image: url(../images/banner2youtu.png);
 	background-size: auto;
 	background-position: center;
 }
 
 .feat3 {
-	background-image: url(../images/banner3a.png);
+	background-image: url(../images/banner3twitt.png);
 	background-size: auto;
 	background-position: center;
 }
 
 .feat4 {
-	background-image: url(../images/banner4a.png);
+	background-image: url(../images/banner4etsy.png);
 	background-size: auto;
 	background-position: center;
 }
@@ -228,6 +227,14 @@ max-width: 100vw;
 	max-width: 100%;
 
 }
+
+.flexslider .slides img {
+	max-height: 300px;
+	width: auto;
+	display: inline;
+}
+
+
 
 /* -- FIN BODY -- */
 /* -- FOOTER -- */
@@ -353,8 +360,11 @@ max-width: 100vw;
 
 	.page{
 		background-color: white;
-		margin: 20px;
 		padding: 20px;
+	}
+
+	.normalpage {
+		margin: 20px;
 	}
 
 	.page p {
@@ -379,13 +389,22 @@ max-width: 100vw;
 		height: 562.5px;
 	}
 
+	.sobrechucao {
+		padding: 20px;
+	}
+
+	.tutoriales {
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+
 
 /* --FIN PAGE -- */
 /* --FRONT PAGE WP-- */
 
 	.front__blog{
 		color: white;
-		padding: 0 20px;
 	}
 
 	.blog__link {
@@ -437,6 +456,7 @@ max-width: 100vw;
 		text-align: center;
 		border-style: dotted;
 		padding: 10px;
+		overflow: auto;
 	}
 
 	.entries__text span{
@@ -465,15 +485,16 @@ max-width: 100vw;
 		margin: 10px;
 	}
 
-	.archive li a {
+	.archive a {
 		text-decoration: none;
 		color: black;
 	}
 
 	.archive li span {
 		font-weight: bolder;
-		font-size: 1.1em;
+		font-size: 1.4em;
 	}
+
 
 /* --FIN ARCHIVES-- */
 /* -- PRODUCTS -- */
@@ -507,7 +528,7 @@ max-width: 100vw;
 	}
 
 	.products li img {
-		height: 200px;
+		max-height: 140px;
 		width: auto;
 		margin: 10px;
 	}
@@ -539,3 +560,13 @@ max-width: 100vw;
 	font-size: 0.9em;
 	padding: 5px;
 	}
+
+
+	.slides li {
+		text-align: center;
+		display: block;
+		text-align: center;
+
+	}
+
+

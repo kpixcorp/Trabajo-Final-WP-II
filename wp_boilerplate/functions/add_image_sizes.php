@@ -14,6 +14,8 @@ function dl_image_sizes( $sizes ) {
 		'custom_logo'	=> __( 'Tamaño personalizado del logo' ),
 		'frontblog'	=> __( 'Tamaño de blog de Front-page' ),
 		'pagesfeatured'	=> __( 'Tamaño de blog de Front-page' ),
+		'slide'	=> __( 'Tamaño pequeño' ),
+		'blogarchive'	=> __( 'Tamaño para la pagina blog' ),
 	);
 
 	return array_merge( $sizes, $add_sizes );
@@ -36,6 +38,8 @@ if ( function_exists( 'add_theme_support' ) ) {
 	add_image_size( 'custom_logo', 800, 600, true );		// Personalización del tamaño del logo
 	add_image_size( 'frontblog', 250, 200, true );		// Entradas blog de Front Page
 	add_image_size( 'pagesfeatured', 400, 600, true );		// Personalización del tamaño del logo
+	add_image_size( 'slide', 500, 600, true );		//  Tamaño pequeño
+	add_image_size( 'blogarchive', 400, 333, true );
 
 	add_filter( 'image_size_names_choose', 'dl_image_sizes' );
 

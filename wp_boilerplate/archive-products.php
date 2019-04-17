@@ -8,7 +8,7 @@
 		<?php while ( have_posts() ) { the_post(); ?>
 			<?php $dispo = get_field('disponibilidad') ?>
 
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<li>
 					<a href="<?php the_permalink() ?>">
 					<h4><?php the_title() ?></h4>
